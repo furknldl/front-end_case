@@ -44,6 +44,8 @@ Projeyi başarıyla çalıştırdıktan sonra, aşağıdaki işlevleri kullanabi
 
 Giriş Sayfası
 
+  Giriş yapılan kısımın kodları Components klasörünün içindeki Login.js dosyasında bulunuyor. 
+
   Kullanıcı Girişi: Kullanıcılar, "kullanıcı adı" ve "şifre" ile giriş yapabilirler.
 
   Geçerli kullanıcı adı ve şifre girilmezse, "Geçersiz kullanıcı adı veya şifre!" hatası görüntülenir.
@@ -51,6 +53,12 @@ Giriş Sayfası
   Başarılı bir giriş sonrası, ürün yönetim sayfasına yönlendirilirsiniz.
 
   Ürün Yönetimi
+
+    Ürünlerin listelendiği tablonun kodu Components klasörünün ProductTable.js dosyasında bulunuyor.
+
+    Yeni ürün ekleme ve düzenleme işlemlerinin kodları Components klasörünün ProductModal.js dosyasında bulunuyor. 
+
+    Ürün silme işlemi onay pop-upʼının kodları Components klasörünün ConfirmDİalog.js dosyasında bulunuyor.
 
   Yeni Ürün Ekleme: Kullanıcılar, "Yeni Ürün Ekle" butonuna tıklayarak yeni bir ürün ekleyebilirler. Ürün adı ve fiyatı girildikten sonra, ürün listeye eklenir.
 
@@ -67,5 +75,7 @@ Bu projede kullanılan teknolojiler şunlardır:
     CSS: Projeye stil eklemek için kullanılmıştır.
 
     React Modal: Ürün ekleme ve düzenleme işlemleri için modal pencereleri yönetmek amacıyla kullanılmıştır.
-    
+
     React State Management: Ürünlerin ve kullanıcı durumlarının yönetilmesi için React’in yerleşik durum yönetimi kullanılmıştır.
+    
+    
