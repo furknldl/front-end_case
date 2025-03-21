@@ -1,38 +1,116 @@
-.App {
+/* Genel Sayfa Stili */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Başlık */
+h1 {
   text-align: center;
+  margin-top: 20px;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Tablo Stili */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+td:nth-child(2) {
+  text-align: left; /* Ürün adlarını sola hizala */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+th {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+/* Buton Stili */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+button.edit {
+  background: #ffc107;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button.delete {
+  background: #dc3545;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.add {
+  background: #28a745;
+  color: white;
+}
+
+/* Buton Hover Efektleri */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Modal Stili */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Onay Pop-up Stili */
+.confirm-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.confirm-dialog button {
+  margin: 10px;
 }
