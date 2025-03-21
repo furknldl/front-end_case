@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+Ürün Yönetim Sistemi (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, React kullanarak geliştirilen bir ürün yönetim sistemidir. Sistem, kullanıcıların giriş yaparak ürünleri ekleyebileceği, düzenleyebileceği ve silebileceği bir platform sunar. Ayrıca giriş için kullanıcı adı ve şifre gereklidir.
 
-## Available Scripts
+Kullanıcı Adı:admin
+Şifre:1234
 
-In the project directory, you can run:
+Projeyi Çalıştırmak İçin Adımlar
+1. Gereksinimler
 
-### `npm start`
+Projeyi çalıştırabilmek için bilgisayarınızda Node.js ve npm (Node Package Manager) yüklü olmalıdır. Node.js'i aşağıdaki bağlantıdan indirebilirsiniz:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  https://nodejs.org/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Projeyi İndirme ve Kurulum
 
-### `npm test`
+Projeyi bilgisayarınıza klonlamak için terminal veya komut satırında aşağıdaki komutu kullanabilirsiniz:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+!!!!!
 
-### `npm run build`
+Bu komut, projeyi yerel bilgisayarınıza indirecektir.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Bağımlılıkları Yükleme
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Proje dosyasına gittiğinizde, gerekli tüm bağımlılıkları yüklemek için şu komutu çalıştırın:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+Bu, proje içinde kullanılan kütüphanelerin yüklenmesini sağlar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Projeyi Çalıştırma
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Proje çalıştırılmaya hazır olduktan sonra aşağıdaki komutu kullanarak geliştirme sunucusunu başlatabilirsiniz:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Bu komut, React uygulamanızı başlatacak ve web tarayıcınızda http://localhost:3000 adresinde çalışmaya başlayacaktır.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Kullanım
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Projeyi başarıyla çalıştırdıktan sonra, aşağıdaki işlevleri kullanabilirsiniz:
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Giriş Sayfası
 
-### Analyzing the Bundle Size
+  Kullanıcı Girişi: Kullanıcılar, "kullanıcı adı" ve "şifre" ile giriş yapabilirler.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  Geçerli kullanıcı adı ve şifre girilmezse, "Geçersiz kullanıcı adı veya şifre!" hatası görüntülenir.
 
-### Making a Progressive Web App
+  Başarılı bir giriş sonrası, ürün yönetim sayfasına yönlendirilirsiniz.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  Ürün Yönetimi
 
-### Advanced Configuration
+  Yeni Ürün Ekleme: Kullanıcılar, "Yeni Ürün Ekle" butonuna tıklayarak yeni bir ürün ekleyebilirler. Ürün adı ve fiyatı girildikten sonra, ürün listeye eklenir.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ Ürün Düzenleme: Var olan ürünleri düzenlemek için, ürünün yanında bulunan "Düzenle" butonuna tıklayabilirsiniz.
 
-### Deployment
+ Ürün Silme: Silmek istediğiniz ürünü seçip "Sil" butonuna tıkladığınızda, silme işlemini onaylayan bir pop-up (onay penceresi) açılır. Onay verdiğinizde ürün silinir.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+ Teknolojiler
 
-### `npm run build` fails to minify
+Bu projede kullanılan teknolojiler şunlardır:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    React: Kullanıcı arayüzünü oluşturmak için kullanılmıştır.
+
+    CSS: Projeye stil eklemek için kullanılmıştır.
+
+    React Modal: Ürün ekleme ve düzenleme işlemleri için modal pencereleri yönetmek amacıyla kullanılmıştır.
+    
+    React State Management: Ürünlerin ve kullanıcı durumlarının yönetilmesi için React’in yerleşik durum yönetimi kullanılmıştır.
